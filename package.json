@@ -1,0 +1,1 @@
+{"name":"vinay-furniture","version":"1.0.0","private":true,"description":"Vinay Furniture single-page website","scripts":{"dev":"node server.js","start":"node server.js"}}
