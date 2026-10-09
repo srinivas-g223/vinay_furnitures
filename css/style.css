@@ -142,12 +142,18 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
  .slides .slide{background-size:100% auto;background-position:center 24%;background-repeat:no-repeat}
 }
 @media(max-width:560px){
+ header,header.s{padding:6px 0;background:var(--paper);box-shadow:0 2px 12px rgba(74,47,27,.1)}
+ #nav{inset:56px 0 auto}
  .wrap{padding-left:18px;padding-right:18px}
- .hero{min-height:620px}
- .hero-in{padding-top:60px}
+ .hero{display:block;min-height:0;padding:230px 0 30px}
+ .hero-in{padding-top:0}
+ .slides{inset:0 0 auto;height:285px;opacity:1;-webkit-mask-image:linear-gradient(180deg,#000 48%,transparent 100%);mask-image:linear-gradient(180deg,#000 48%,transparent 100%)}
+ .slides .slide{background-size:contain;background-position:top center;background-repeat:no-repeat}
+ .slide{transform:none}
  .copy h1{font-size:clamp(2.4rem,11vw,3.3rem)}
- .copy .row{gap:10px}
- .copy .row .btn{padding:12px 18px}
+ .copy .row{gap:8px}
+ .copy .row .btn{padding:11px 14px;font-size:.8rem}
+ .ctrl{margin-top:28px}
  .shead{align-items:flex-start}
  .srch{min-width:0}
  .ctabs{gap:8px}
@@ -163,7 +169,7 @@ a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid var(-
  .brand>svg{width:38px;height:38px}
  .brand b{font-size:1.4rem}
  .brand i{font-size:.68rem}
- .copy .row{align-items:flex-start;flex-direction:column}
+ .copy .row{align-items:flex-start}
  .items{grid-template-columns:minmax(0,1fr)}
 }
 .im{background:var(--sand)}
